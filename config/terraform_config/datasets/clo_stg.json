@@ -1,0 +1,11 @@
+[
+    {
+        "dataset_id": "CLO_STG",
+        "description": "Staging ",
+        "dataset_name": "STG",
+        "labels": {
+            "env": "dev",
+            "owner": "closer"
+        }
+    }
+]

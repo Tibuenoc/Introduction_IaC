@@ -1,0 +1,43 @@
+[
+    {
+        "dataset_id": "CLO_STG",
+        "table_id": "STG_DIM_PROJECT",
+        "schema": [
+            {
+                "name": "BK_PROJECT",
+                "type": "STRING",
+                "mode": "REQUIRED",
+                "description": "Project that the work item belongs. Mapping: derived from [ODS_ADO].[System_IterationPath]"
+            },
+            {
+                "name": "ATR_PROJECT",
+                "type": "STRING",
+                "mode": "REQUIRED",
+                "description": "Project that the work item belongs. Mapping: derived from [ODS_ADO].[System_IterationPath]"
+            },
+            {
+                "name": "CLO_DATE_CREATED",
+                "type": "DATETIME",
+                "mode": "REQUIRED",
+                "description": "Table data creation date"
+            },
+            {
+                "name": "CLO_DATE_KEY",
+                "type": "INTEGER",
+                "mode": "REQUIRED",
+                "description": "Data date (int format)"
+            },
+            {
+                "name": "CLO_HASHCOLUMN",
+                "type": "BYTES",
+                "mode": "REQUIRED",
+                "description": "Hash column"
+            }
+        ],
+        "labels": {
+            "env": "dev",
+            "billiable": "true",
+            "owner": "closer"
+        }
+    }
+]

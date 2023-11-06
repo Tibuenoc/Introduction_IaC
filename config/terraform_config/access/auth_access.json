@@ -1,0 +1,6 @@
+[
+    {
+        "role" : "roles/bigquery.dataOwner",
+        "user_by_email" : ["tiago.correa@closer.pt", "joao.monteiro@closer.pt" ]
+    }
+]
