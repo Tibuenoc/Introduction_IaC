@@ -1,0 +1,43 @@
+[
+    {
+        "dataset_id": "CLO_ODS",
+        "table_id": "ODS_SALES",
+        "schema": [
+            {
+                "name": "Author",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Area paths allow you to group work items by team, product, or feature area"
+            },
+            {
+                "name": "Project",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Team related to the AreaPath"
+            },
+            {
+                "name": "email_author",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Iteration paths allow you to group work into sprints, milestones, or other event-specific. Format: Project-PI i-Iteration i"
+            },
+            {
+                "name": "price",
+                "type": "FLOAT",
+                "mode": "NULLABLE",
+                "description": "You use work items to track features and requirements you're developing, code defects or bugs, and issues or risks to your project. Each work item is based on a work item type that determines the work item fields available for tracking information"
+            },
+            {
+                "name": "Shipping_date",
+                "type": "TIMESTAMP",
+                "mode": "NULLABLE",
+                "description": "Shipping date"
+            }
+        ],
+        "labels": {
+            "env": "dev",
+            "billiable": "true",
+            "owner": "closer"
+        }
+    }
+]

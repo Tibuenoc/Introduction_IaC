@@ -1,0 +1,11 @@
+[
+    {
+        "dataset_id": "CLO_ODS",
+        "description": "ODS ",
+        "dataset_name": "ODS",
+        "labels": {
+            "env": "dev",
+            "owner": "closer"
+        }
+    }
+]

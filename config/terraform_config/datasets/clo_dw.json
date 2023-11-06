@@ -1,0 +1,11 @@
+[
+    {
+        "dataset_id": "CLO_DW",
+        "description": "DataWarehouse",
+        "dataset_name": "DW",
+        "labels": {
+            "env": "dev",
+            "owner": "closer"
+        }
+    }
+]

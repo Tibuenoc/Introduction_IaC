@@ -1,0 +1,44 @@
+[
+    {
+        "dataset_id": "CLO_STG",
+        "table_id": "STG_DIM_AUTHOR",
+        "schema": [
+            {
+                "name": "BK_AUTHOR",
+                "type": "STRING",
+                "mode": "REQUIRED",
+                "description": "Author ID - unique key.  Mapping: [ODS_COMMIT].[commit_email]/[ODS_ADO].[System_CreatedBy]/[ODS_ADO].[System_ChangedBy]/[ODS_ADO].[System_AssignTo]"
+            },
+            {
+                "name": "ATR_NAME",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Who created the commit. Mapping: [ODS_COMMIT].[commit_author]"
+            },
+            {
+                "name": "CLO_DATE_CREATED",
+                "type": "DATETIME",
+                "mode": "REQUIRED",
+                "description": "Table data creation date"
+            },
+            {
+                "name": "CLO_DATE_KEY",
+                "type": "INTEGER",
+                "mode": "REQUIRED",
+                "description": "Data date (int format)"
+            },
+            {
+                "name": "CLO_HASHCOLUMN",
+                "type": "BYTES",
+                "mode": "REQUIRED",
+                "description": "Hash column"
+            }
+        ],
+        "labels": {
+            "env": "dev",
+            "billiable": "true",
+            "owner": "closer"
+        }
+    }
+
+]

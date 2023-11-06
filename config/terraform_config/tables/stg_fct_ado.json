@@ -1,0 +1,181 @@
+[
+    {
+        "dataset_id": "CLO_STG",
+        "table_id": "STG_FCT_SALES",
+        "schema": [
+            {
+                "name": "BK_AREA_PATH",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Column where work item is in the board on ADO. Mapping [ODS_ADO].[System_AreaPath]"
+            },
+            {
+                "name": "BK_ASSIGNED_TO",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Who work item is assigned to. Mapping [ODS_ADO].[System_AssignedTo]"
+            },
+            {
+                "name": "BK_BOARD_COLUMN",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Column where work item is in the board on ADO. Mapping [ODS_ADO].[System_BoardColumn]"
+            },
+            {
+                "name": "BK_CHANGED_BY",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Who changed the work item. Mapping [ODS_ADO].[System_CreatedBy]"
+            },
+            {
+                "name": "BK_CREATED_BY",
+                "type": "STRING",
+                "mode": "REQUIRED",
+                "description": "Who created the work item. Mapping [ODS_ADO].[System_ChangedBy]"
+            },
+            {
+                "name": "BK_ITERATION_PI",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Combination of iteration and PI - unique key. Mapping [ODS_ADO].[System_IterationPath]"
+            },
+            {
+                "name": "BK_PRIORITY",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Item priority. Mapping [ODS_ADO].[Microsoft_VSTS_Common_Priority]"
+            },
+            {
+                "name": "BK_PROJECT",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Project that the work item belongs. Mapping [ODS_ADO].[System_IterationPath]"
+            },
+            {
+                "name": "BK_STATE",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "State of WorkItem. Mapping [ODS_ADO].[System_State]"
+            },
+            {
+                "name": "BK_TEAM",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Team related to the AreaPath. Mapping [ODS_ADO].[System_TeamProject]"
+            },
+            {
+                "name": "BK_VALUE_AREA",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "The area of customer value addressed by the epic, feature, or backlog item. Mapping [ODS_ADO].[Microsoft_VSTS_Common_ValueArea]"
+            },
+            {
+                "name": "BK_WORK_ITEM_ID",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Who work item is assigned to. Mapping [ODS_ADO].[System_id]"
+            },
+            {
+                "name": "BK_WORK_ITEM_ID_FORWARD",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Son work item id (this work item id_forward is a son of BK_WORK_ITEM_ID) . Mapping:[ODS_ADO].[[ado].[System_LinkTypes_Hierarchy_Forward]"
+            },
+            {
+                "name": "BK_WORK_ITEM_ID_REVERSE",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Father work item id (this work item id_reverse is a father of BK_WORK_ITEM_ID) . Mapping:[ODS_ADO].[[ado].[System_LinkTypes_Hierarchy_Reverse]"
+            },
+            {
+                "name": "BK_WORK_ITEM_TYPE",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Track features and requirements you're developing, code defects or bugs, and issues or risks to your project. Mapping:[ODS_ADO].[System_WorkItemType]"
+            },
+            {
+                "name": "DT_ACTIVATED",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Activated Date of work item. Mapping [ODS_ADO].[Microsoft_VSTS_Common_ActivatedDate]"
+            },
+            {
+                "name": "DT_CHANGED",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "If work item has been edited, this is the editing date. Mapping [ODS_ADO].[System_ChangedDate]"
+            },
+            {
+                "name": "DT_CLOSED",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Item closure date. Mapping [ODS_ADO].[Microsoft_VSTS_Common_ClosedDate]"
+            },
+            {
+                "name": "DT_CREATED",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Creation date of work item. Mapping [ODS_ADO].[System_CreatedDate]"
+            },
+            {
+                "name": "DT_STATE_CHANGE",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Date when state item changed. Mapping [ODS_ADO].[Microsoft_VSTS_Common_StateChangeDate]"
+            },
+            {
+                "name": "DT_SLA",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Limit date of work item. Mapping: derivated [ODS_CALENDAR].[Day_Month]"
+            },
+            {
+                "name": "DT_START",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Limit date of work item. Mapping: Derivated [ODS_CALENDAR].[Day_Month]"
+            },
+            {
+                "name": "AMT_STORY_POINTS",
+                "type": "FLOAT",
+                "mode": "NULLABLE",
+                "description": "Story points are units of measure for expressing an estimate of the overall effort required to fully implement a product backlog item or any other piece of work. Mapping [ODS_ADO].[Microsoft_VSTS_Scheduling_StoryPoints]"
+            },
+            {
+                "name": "ATR_TITLE",
+                "type": "STRING",
+                "mode": "NULLABLE",
+                "description": "Title of work item. Mapping [ODS_ADO].[System_Title]"
+            },
+            {
+                "name": "COD_STACK_RANK",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Stack Rank is not priority. It is just the order in which your team will work. Mapping [ODS_ADO].[Microsoft_VSTS_Common_StackRank]"
+            },
+            {
+                "name": "QTT_COMMENT",
+                "type": "INTEGER",
+                "mode": "NULLABLE",
+                "description": "Count of comments in work item. Mapping [ODS_ADO].[System_CommentCount]"
+            },
+            {
+                "name": "CLO_DATE_CREATED",
+                "type": "DATETIME",
+                "mode": "REQUIRED",
+                "description": "Table data creation date"
+            },
+            {
+                "name": "CLO_DATE_KEY",
+                "type": "INTEGER",
+                "mode": "REQUIRED",
+                "description": "Data date (int format)"
+            }
+        ],
+        "labels": {
+            "env": "dev",
+            "billiable": "true",
+            "owner": "closer"
+        }
+    }
+]
